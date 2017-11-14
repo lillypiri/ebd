@@ -1,0 +1,15 @@
+{
+  "name": "ebd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ebd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^2.0.0",
+    "date-fns": "^1.29.0"
+  }
+}

@@ -1,0 +1,1 @@
+Script to work out the Effective Business Days, uses data from (Australian Public Holidays Dates Machine Readable Dataset)[https://data.gov.au/dataset/australian-holidays-machine-readable-dataset] and outputs a csv file. You can use that csv file to upload to Chartio and use the data.
