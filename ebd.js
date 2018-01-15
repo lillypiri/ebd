@@ -11,7 +11,7 @@ function getBusinessValueForDay(date) {
 
   // Check for federal holidays
   let partialDay = 1;
-  const states = ['NSW', 'QLD', 'VIC'];
+  const states = ['NSW', 'QLD', 'VIC', 'NAT'];
   states.forEach(state => {
     // See if this date exists as a holiday in the array
     const holiday = holidays.find(h => {
@@ -28,12 +28,13 @@ function getBusinessValueForDay(date) {
 
 function getBusinessDays() {
   // For each day of the year, check if its a weekend (or public holiday)
+  // You might need to change the year on line 37.
   let months = {};
   let lastDate;
   let currentDate;
   let ebdGoneThisMonth = 0;
   for (let i = 1; i <= 366; i++) {
-    currentDate = new Date(Date.UTC(2017, 0, 1));
+    currentDate = new Date(Date.UTC(2018, 0, 1));
     currentDate.setDate(i);
 
     let m = currentDate.getMonth();
